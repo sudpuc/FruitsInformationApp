@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AppleAcitvity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityApple">
+
+        <!-- Vertical layout for text content on the right side -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="start"
+            tools:ignore="MissingConstraints">
+
+            <!-- Title for the fruit -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+            <ImageView
+                android:id="@+id/titlee"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Image of a banana"
+                android:src="@drawable/banana" />
+
+            <!-- Description of the apple -->
+            <TextView
+                android:id="@+id/appleDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apples are one of the most popular fruits in the world. They are crisp, juicy, and sweet, and are a great source of dietary fiber, vitamin C, and antioxidants. Apples come in many varieties, each with its own unique flavor and color."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Nutritional facts about the apple -->
+            <TextView
+                android:id="@+id/nutritionFacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nutritional Facts:\n• Calories: 52 kcal (per 100g)\n• Carbs: 14g\n• Fiber: 2.4g\n• Vitamin C: 4.6mg"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Image of the jackfruit on the left side -->
+
+        <!-- Vertical layout for text content on the right side -->
+
+        <ImageView
+            android:id="@+id/jackfruitImage"
+            android:layout_width="161dp"
+            android:layout_height="232dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Image of a jackfruit"
+            android:src="@drawable/jackfruit" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <!-- Title for the fruit -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jackfruit"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description of the jackfruit -->
+            <TextView
+                android:id="@+id/jackfruitDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jackfruit is the largest tree-borne fruit in the world. It has a spiky green or yellow exterior and a fleshy, fibrous interior. The fruit is rich in vitamins, minerals, and fiber, often used in savory dishes or as a meat substitute due to its texture."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Nutritional facts about the jackfruit -->
+            <TextView
+                android:id="@+id/nutritionFacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nutritional Facts:\n• Calories: 95 kcal (per 100g)\n• Carbs: 23g\n• Vitamin C: 13.7 mg\n• Fiber: 1.5g"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

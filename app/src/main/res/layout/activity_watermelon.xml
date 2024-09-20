@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Image of the watermelon on the left side -->
+
+        <!-- Vertical layout for text content on the right side -->
+        <ImageView
+            android:id="@+id/watermelonImage"
+            android:layout_width="0dp"
+            android:layout_height="196dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:contentDescription="Image of a watermelon"
+            android:src="@drawable/water" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <!-- Title for the fruit -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watermelon"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description of the watermelon -->
+
+        <TextView
+            android:id="@+id/watermelonDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watermelon is a refreshing, juicy fruit with a hard green rind and sweet red flesh. It’s mostly water, making it a hydrating snack during hot weather. Watermelon is rich in vitamins A and C and contains antioxidants."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+            <!-- Nutritional facts about watermelon -->
+            <TextView
+                android:id="@+id/nutritionFacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nutritional Facts:\n• Calories: 30 kcal (per 100g)\n• Carbs: 8g\n• Vitamin C: 8.1 mg\n• Water: 92%"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

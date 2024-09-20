@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title for the fruit -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banana"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Image representing the banana -->
+
+        <!-- Text describing the banana -->
+        <ImageView
+            android:id="@+id/bananaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="364dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Image of a banana"
+            android:src="@drawable/banana" />
+
+        <TextView
+            android:id="@+id/bananaDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A banana is a curved, yellow fruit with a soft, sweet flesh. It is a rich source of potassium, vitamins, and dietary fiber, making it a great snack option."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Nutritional facts about the banana -->
+        <TextView
+            android:id="@+id/nutritionFacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="16dp"
+            android:text="Nutritional Facts:\n• Calories: 89 kcal (per 100g)\n• Carbs: 22.8g\n• Potassium: 358mg\n• Vitamin C: 8.7mg"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

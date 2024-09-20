@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title for the fruit -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guava"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Image representing the guava -->
+        <ImageView
+            android:id="@+id/guavaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="212dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Image of a guava"
+            android:src="@drawable/guava" />
+
+        <!-- Text describing the guava -->
+        <TextView
+            android:id="@+id/guavaDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guava is a tropical fruit rich in dietary fiber, vitamin C, and antioxidants. It has a green or yellow skin with a sweet or tart flesh inside. The seeds are edible, and it is often eaten raw or used in juices, jams, and desserts."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Nutritional facts about the guava -->
+        <TextView
+            android:id="@+id/nutritionFacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nutritional Facts:\n• Calories: 68 kcal (per 100g)\n• Carbs: 14g\n• Vitamin C: 228 mg\n• Fiber: 5g"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="1dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

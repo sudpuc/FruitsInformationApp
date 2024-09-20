@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Image of the kiwi on the left side -->
+        <ImageView
+            android:id="@+id/kiwiImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/kiwi"
+        android:contentDescription="Image of a kiwi"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp" />
+
+        <!-- Vertical layout for text content on the right side -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <!-- Title for the kiwi -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiwi"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description of the kiwi -->
+            <TextView
+                android:id="@+id/kiwiDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiwi is a small, brown fruit with bright green or yellow flesh. It's known for its sweet and tangy taste. Kiwi is packed with vitamins, particularly vitamin C, and is a great source of dietary fiber. The seeds and skin are edible, though the skin is often peeled before consumption."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Nutritional facts about kiwi -->
+            <TextView
+                android:id="@+id/nutritionFacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nutritional Facts:\n• Calories: 61 kcal (per 100g)\n• Carbs: 15g\n• Vitamin C: 93 mg\n• Fiber: 3g"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
